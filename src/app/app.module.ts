@@ -13,15 +13,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MainComponent } from './main/main.component';
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       TreeComponent,
       NavComponent,
-    ],
+      MainComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
