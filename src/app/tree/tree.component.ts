@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tree.component.scss']
 })
 export class TreeComponent implements OnInit {
+  name : string;
+  category : string;
+  image = {
+    src : "",
+    description : ""
+  };
+  description : string;
 
   constructor() { }
 

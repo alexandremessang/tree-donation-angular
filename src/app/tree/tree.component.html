@@ -1,18 +1,20 @@
-<div class="card">
-  <div class="left">
-    <!-- Image de l'arbre -->
-    <img>
-  </div>
-  <div class="right">
-    <div class="top">
-      <!-- Libellé de l'arbre -->
-    </div>
-    <div class="bottom">
-      <!-- Description de l'arbre -->
-
-    </div>
-  </div>
-  <div class="bottom-card">
-      <!-- Bouton pour sélectionner l'arbre -->
-  </div>
-</div>
+<mat-card class="tree-card">
+  <mat-card-header>
+    <!-- Libellé de l'arbre -->
+    <mat-card-title>{{name}}</mat-card-title>
+    <mat-card-subtitle>{{category}}</mat-card-subtitle>
+  </mat-card-header>
+  <!-- Image de l'arbre -->
+  <img mat-card-image src="{{image.src}}" alt="{{image.description}}">
+  <mat-card-content>
+    <!-- Description de l'arbre -->
+    <p>
+      {{description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- Bouton pour sélectionner l'arbre -->
+    <!-- Une pop-up est ouverte proposant de valider ou invalider -->
+    <button mat-button>Purchase</button>
+  </mat-card-actions>
+</mat-card>
